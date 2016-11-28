@@ -28,10 +28,10 @@ fp_2_vraie = (1/(2*PI)) * (4.69/L1)**2 *np.sqrt(c_T)
 
 # --- Calcule des fréquences propres approchées 'f':
 fp_1_app = (1/(2*PI)) * (3.567/(L1**2)) * np.sqrt(c_T)
-fp_2_app = (1/(2*PI)) * np.sqrt(c_T)
+fp_2_app = 2 * fp_1_app
 
 # --- Print: valeures arrondies
 print 'Poutre E-L (transverse):\nFréquences propres:\n \n=THÉORIQUES= (Hz):\n\t1:  {0} \n\t2:  {1}'.format(fp_1_vraie, fp_2_vraie)
 
-print '\n=RAYLEIGH-RITZ= (Hz):\n\t1: {0} \n\t'.format(fp_1_app)
+print '\n=RAYLEIGH-RITZ= (Hz):\n\t1: {0} \n\t2:  {1}'.format(fp_1_app, fp_2_app)
 
